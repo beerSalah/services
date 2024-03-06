@@ -1,0 +1,133 @@
+.feature-section{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*new style*/ 
+.margin{
+    margin-bottom: 40px;
+}
+.margin ul li a{
+    color: aliceblue;
+}
+.margin .nav-item{
+    margin-inline-start: 10px;
+    background-color: #042c45;
+    border-radius: 50px;
+}
+.card{
+    height: 300px;
+    width: 90%;
+    border-radius: 10px;
+    border-top-left-radius: 70px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    margin-top: 50px;
+   margin-left: 50px;
+   margin-bottom: 50px;
+}
+
+
+.card .card-body{
+    text-align: center;
+}
+
+.post-thumb img{
+    border-radius: 100%;
+}
+
+.card .post-thumb::before{
+    position: absolute;
+    width:90px;
+    height: 90px;
+    margin: 0 10px;
+    background-color: #042c45;
+    top: -35px;
+    left: 135px;
+    content: '';
+    z-index: 1;
+    border-radius: 20px;
+    transform: rotate(45deg);
+}
+.card .post-thumb img{
+    width: 76px;
+    position: relative;
+    top: -29px;
+    left: 152px;
+    z-index: 1;
+}
+
+
+
+.project-slider{
+    margin-top: 50px;
+}
+
+
+.owl-theme .owl-dots .owl-dot {
+    background: none;
+    border: none;
+    padding: 0;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #042c45;
+}
+.owl-theme .owl-dots .owl-dot:focus {
+    outline: none;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 40px;
+}
+
+
+
+ @media(max-width:1199px){
+    .card .post-thumb::before{
+        position:absolute;
+        left: 160px;    
+    }
+    .card .post-thumb img{
+        position: relative;
+        left: 177px;
+    }
+ }
+
+ @media (max-width:991px) {
+    .card .post-thumb::before{
+        position: absolute;
+        left: 120px;
+    }
+    .card .post-thumb img{
+        position: relative;
+        left: 137px;
+    }
+ }
+ @media(max-width:767px){
+    .card .post-thumb::before{
+        position: absolute;
+        left: 180px;
+    }
+    .card .post-thumb img{
+        position: relative;
+        left: 197px;
+    }
+ }
+ @media(max-width:425px){
+    .card .post-thumb::before{
+        position: absolute;
+        left: 120px;
+    }
+    .card .post-thumb img{
+        position: relative;
+        left: 137px;
+    }
+ }
+ @media (max-width:375px) {
+    .card .post-thumb::before{
+        position: absolute;
+        left:100px;
+    }
+    .card .post-thumb img{
+        position: relative;
+        left: 117px;
+    }
+ }
